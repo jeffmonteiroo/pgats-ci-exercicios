@@ -1,0 +1,16 @@
+{
+  "name": "trabalho-conclusao",
+  "version": "1.0.0",
+  "description": "Trabalho de Conclusao da Disciplina - Servico de Pagamento",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "mocha": "^11.7.5"
+  }
+}

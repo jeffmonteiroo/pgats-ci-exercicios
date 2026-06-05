@@ -1,0 +1,18 @@
+# CI - Exercicio 3: Pipeline com Self-hosted Runner
+name: 'Pipeline Self-hosted Runner'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-local:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Executar testes no runner local
+        run: npm test
